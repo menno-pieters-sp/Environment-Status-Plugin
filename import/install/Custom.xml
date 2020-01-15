@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+	<Custom name="Environment Status Image Mapping">
+		<Attributes>
+			<Map>
+				<entry key="sandbox" value="ui/images/sandbox.png" />
+				<entry key="dev" value="ui/images/development.png" />
+				<entry key="development" value="ui/images/development.png" />
+				<entry key="test" value="ui/images/test.png" />
+				<entry key="qa" value="ui/images/qa.png" />
+				<entry key="production" value="ui/images/production.png" />
+				<entry key="maintenance" value="ui/images/maintenance.png" />
+			</Map>
+		</Attributes>
+	</Custom>
+</sailpoint>

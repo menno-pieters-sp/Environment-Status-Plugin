@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin displayName="Environment Status Plugin" minSystemVersion="7.3" name="environmentStatusPlugin" rightRequired="" version="0.1">
+	<Attributes>
+		<Map>
+			<entry key="minUpgradableVersion" value="0.1" />
+			<entry key="settings">
+				<value>
+					<List>
+						<Setting dataType="string" defaultValue="sandbox" helpText="" label="Environment Status" name="environmentStatus" />
+					</List>
+				</value>
+			</entry>
+			<entry key="settingsForm">
+				<value>
+					<Form name="Environment Status Plugin Settings">
+						<Attributes>
+							<Map>
+								<entry key="pageTitle" value="Environment Status Plugin Settings"/>
+								<entry key="title" value="Environment Status Plugin Settings"/>
+							</Map>
+						</Attributes>
+						<Section name="Configuration">
+							<Field name="environmentStatus" displayName="Environment Status">
+								<AllowedValues>
+									<List>
+										<String>sandbox</String>
+										<String>Sandbox</String>
+									</List>
+									<List>
+										<String>dev</String>
+										<String>Development</String>
+									</List>
+									<List>
+										<String>test</String>
+										<String>Test</String>
+									</List>
+									<List>
+										<String>qa</String>
+										<String>Quality Assurance</String>
+									</List>
+									<List>
+										<String>production</String>
+										<String>Production</String>
+									</List>
+									<List>
+										<String>maintenance</String>
+										<String>Maintenance</String>
+									</List>
+								</AllowedValues>
+							</Field>
+						</Section>
+					</Form>
+				</value>
+			</entry>
+			<entry key="restResources">
+				<value>
+					<List>
+						<String>sailpoint.plugin.environmentimageplugin.rest.EnvironmentStatusPluginResource</String>
+					</List>
+				</value>
+			</entry>
+			<entry key="snippets">
+				<value>
+					<List>
+						<Snippet regexPattern=".*" rightRequired="">
+							<Scripts>
+								<String>ui/js/plugin.js</String>
+							</Scripts>
+							<StyleSheets>
+								<String>ui/css/plugin.css</String>
+							</StyleSheets>
+						</Snippet>
+					</List>
+				</value>
+			</entry>
+		</Map>
+	</Attributes>
+</Plugin>

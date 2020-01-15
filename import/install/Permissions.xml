@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+  <SPRight displayName="environmentImagePluginRight" name="environmentImagePluginRight"/>
+  <SPRight displayName="environmentStatusPluginRESTAllow" name="environmentStatusPluginRESTAllow"/>
+</sailpoint>
